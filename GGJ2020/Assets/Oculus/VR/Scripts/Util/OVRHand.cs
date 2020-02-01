@@ -60,6 +60,12 @@ public class OVRHand : MonoBehaviour,
 	public float HandScale { get; private set; }
 	public TrackingConfidence HandConfidence { get; private set; }
 
+    public OVRPlugin.HandState HandState
+    {
+        get { return _handState; }
+    }
+
+
 	private void Awake()
 	{
 		_pointerPoseGO = new GameObject();

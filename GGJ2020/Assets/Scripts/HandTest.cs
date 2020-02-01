@@ -8,6 +8,8 @@ public class HandTest : MonoBehaviour
     OVRHand hand;
     OVRSkeleton skeleton;
 
+    FingerData fingers;
+
     bool b_hasInitialized = false;
     
     int i_numBones;
@@ -22,6 +24,7 @@ public class HandTest : MonoBehaviour
     {
         hand = GetComponent<OVRHand>();
         skeleton = GetComponent<OVRSkeleton>();
+        fingers = GetComponent<FingerData>();
 
         i_numBones = skeleton.Bones.Count;
         t_targets = new Transform[i_numBones];
@@ -51,9 +54,23 @@ public class HandTest : MonoBehaviour
         f_pinchStrengths[3] = hand.GetFingerPinchStrength(OVRHand.HandFinger.Ring);
         f_pinchStrengths[4] = hand.GetFingerPinchStrength(OVRHand.HandFinger.Pinky);
 
-        for(int i=0;i<5;i++)
-        {
-            tmp_amounts[i].text = f_pinchStrengths[i].ToString() + " %";
-        }
+        tmp_amounts[0].text = i_numBones.ToString();
+
+        //hand.HandState.
+        //Vector3 rot = Quaternion.ToEulerAngles(hand.HandState.);
+
+        //tmp_amounts[0].text = i_numBones.ToString();
+        //tmp_amounts[1].text = hand.IsPointerPoseValid.ToString();
+
+        //for(int i=0;i<5;i++)
+        //{
+        //    tmp_amounts[i].text = finger.ToString() + " %";
+        //}
+
+        //tmp_amounts[0].text = (fingers.extentThumb * 1).ToString() + " %";
+        //tmp_amounts[1].text = (fingers.extentIndex * 1).ToString() + " %";
+        //tmp_amounts[2].text = (fingers.extentMiddle * 1).ToString() + " %";
+        //tmp_amounts[3].text = (fingers.extentRing * 1).ToString() + " %";
+        //tmp_amounts[4].text = (fingers.extentPinky * 1).ToString() + " %";
     }
 }
