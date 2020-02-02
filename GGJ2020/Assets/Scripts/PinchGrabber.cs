@@ -24,6 +24,16 @@ public class PinchGrabber : MonoBehaviour
     List<Collider> grabbedObjects = new List<Collider>();
     int i_numGrabs;
 
+    public Transform HandTransform
+    {
+        get { return t_this; }
+    }
+
+    public Transform ThumbTip
+    {
+        get { return t_thumbTip; }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -88,8 +98,14 @@ public class PinchGrabber : MonoBehaviour
         i_numGrabs = hits.Length;
         for(int i=0;i<i_numGrabs;i++)
         {
-            PinchGrabTarget target = hits[i].GetComponent<PinchGrabTarget>();
-            if (!target) continue;
+            PinchActionTarget actionTarget = hits[i].GetComponent<PinchActionTarget>();
+            if(actionTarget)
+            {
+                actionTarget.OnPinchAction(this);
+            }
+
+            PinchGrabTarget grabTarget = hits[i].GetComponent<PinchGrabTarget>();           
+            if (!grabTarget) continue;
                 
             grabbedObjects.Add(hits[i]);
             hits[i].transform.SetParent(t_this);
