@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 77715b8b6b248994891d3ccad1ad330b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028377, g: 0.22571409, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.1606856, g: 0.34676534, b: 0.4741936, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1269,7 +1269,7 @@ GameObject:
   - component: {fileID: 146314060}
   - component: {fileID: 146314059}
   m_Layer: 5
-  m_Name: amount
+  m_Name: debugright0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1798,7 +1798,7 @@ GameObject:
   - component: {fileID: 218992792}
   - component: {fileID: 218992791}
   m_Layer: 5
-  m_Name: amount (3)
+  m_Name: debugleft3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2316,7 +2316,7 @@ GameObject:
   - component: {fileID: 251162291}
   - component: {fileID: 251162290}
   m_Layer: 5
-  m_Name: amount
+  m_Name: debugleft0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2522,7 +2522,7 @@ GameObject:
   - component: {fileID: 252178836}
   - component: {fileID: 252178835}
   m_Layer: 5
-  m_Name: amount (2)
+  m_Name: debugleft2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2989,7 +2989,7 @@ GameObject:
   - component: {fileID: 315878349}
   - component: {fileID: 315878350}
   m_Layer: 0
-  m_Name: palmCenter
+  m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3094,14 +3094,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 315878344}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c50b9b351a6c0743bb932c4f8e522ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &328971084
 GameObject:
   m_ObjectHideFlags: 0
@@ -4715,14 +4710,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 474677386}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c50b9b351a6c0743bb932c4f8e522ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &483920790
 GameObject:
   m_ObjectHideFlags: 0
@@ -5047,7 +5037,7 @@ GameObject:
   - component: {fileID: 537686063}
   - component: {fileID: 537686062}
   m_Layer: 5
-  m_Name: amount (2)
+  m_Name: debugright2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6688,14 +6678,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 742394916}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c50b9b351a6c0743bb932c4f8e522ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &748164489
 GameObject:
   m_ObjectHideFlags: 0
@@ -7022,14 +7007,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 752232999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c50b9b351a6c0743bb932c4f8e522ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &761730042
 GameObject:
   m_ObjectHideFlags: 0
@@ -7830,14 +7810,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 863202334}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c50b9b351a6c0743bb932c4f8e522ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &869976322
 GameObject:
   m_ObjectHideFlags: 0
@@ -7958,14 +7933,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 869976322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c50b9b351a6c0743bb932c4f8e522ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &879026670
 GameObject:
   m_ObjectHideFlags: 0
@@ -7980,7 +7950,7 @@ GameObject:
   - component: {fileID: 879026673}
   - component: {fileID: 879026672}
   m_Layer: 5
-  m_Name: amount (1)
+  m_Name: debugright1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9199,14 +9169,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1046011457}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c50b9b351a6c0743bb932c4f8e522ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &1083190166
 GameObject:
   m_ObjectHideFlags: 0
@@ -9221,7 +9186,7 @@ GameObject:
   - component: {fileID: 1083190169}
   - component: {fileID: 1083190168}
   m_Layer: 5
-  m_Name: amount (1)
+  m_Name: debugleft1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10039,14 +10004,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1128950088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c50b9b351a6c0743bb932c4f8e522ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &1146719020
 GameObject:
   m_ObjectHideFlags: 0
@@ -10127,7 +10087,7 @@ GameObject:
   - component: {fileID: 1164275771}
   - component: {fileID: 1164275770}
   m_Layer: 5
-  m_Name: amount (4)
+  m_Name: debugright4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10439,14 +10399,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1174805696}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c50b9b351a6c0743bb932c4f8e522ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &1184363781
 GameObject:
   m_ObjectHideFlags: 0
@@ -10461,7 +10416,7 @@ GameObject:
   - component: {fileID: 1184363784}
   - component: {fileID: 1184363783}
   m_Layer: 5
-  m_Name: amount (4)
+  m_Name: debugleft4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10945,14 +10900,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1199531183}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c50b9b351a6c0743bb932c4f8e522ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &1215175572
 GameObject:
   m_ObjectHideFlags: 0
@@ -13720,7 +13670,7 @@ GameObject:
   - component: {fileID: 1846547529}
   - component: {fileID: 1846547528}
   m_Layer: 5
-  m_Name: amount (3)
+  m_Name: debugright3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14184,14 +14134,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1922604259}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c50b9b351a6c0743bb932c4f8e522ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &1964619385
 GameObject:
   m_ObjectHideFlags: 0
@@ -14747,14 +14692,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2043007543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c50b9b351a6c0743bb932c4f8e522ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &2053541632
 GameObject:
   m_ObjectHideFlags: 0
@@ -14875,14 +14815,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2053541632}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c50b9b351a6c0743bb932c4f8e522ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &2060679385
 GameObject:
   m_ObjectHideFlags: 0

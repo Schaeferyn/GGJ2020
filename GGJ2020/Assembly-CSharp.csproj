@@ -74,6 +74,10 @@
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Official\Smear\Smear.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Official\TemplateExamples\PostProcess\Sobel\PostProcessExample.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Official\TemplateExamples\Sprites\SpriteMask\SpriteMaskController.cs" />
+    <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\FPSWalkerEnhanced.cs" />
+    <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\SmoothMouseLook.cs" />
+    <Compile Include="Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxChanger.cs" />
+    <Compile Include="Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxRotator.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />
@@ -409,6 +413,8 @@
     <Compile Include="Assets\Scripts\FingerData.cs" />
     <Compile Include="Assets\Scripts\GameStarter.cs" />
     <Compile Include="Assets\Scripts\HandTest.cs" />
+    <Compile Include="Assets\Scripts\PinchGrabTarget.cs" />
+    <Compile Include="Assets\Scripts\PinchGrabber.cs" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Official\MultiPassDistortion\DoublePassUnlitTemplate.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Official\StencilExample\RefractionsPanels\AnimatedRefraction.shader" />
