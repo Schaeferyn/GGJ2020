@@ -88,6 +88,9 @@ public class PinchGrabber : MonoBehaviour
         i_numGrabs = hits.Length;
         for(int i=0;i<i_numGrabs;i++)
         {
+            PinchGrabTarget target = hits[i].GetComponent<PinchGrabTarget>();
+            if (!target) continue;
+                
             grabbedObjects.Add(hits[i]);
             hits[i].transform.SetParent(t_this);
             
@@ -108,6 +111,7 @@ public class PinchGrabber : MonoBehaviour
             if (body)
             {
                 body.isKinematic = false;
+                body.useGravity = true;
             }
 
             grabbedObjects[i].transform.SetParent(null);
