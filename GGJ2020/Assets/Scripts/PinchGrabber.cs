@@ -22,6 +22,7 @@ public class PinchGrabber : MonoBehaviour
     Transform t_thumbTip;
     List<Collider> grabbedObjects = new List<Collider>();
     List<Rigidbody> grabbedBodies = new List<Rigidbody>();
+    List<Element> grabbedElements = new List<Element>();
     int i_numGrabs;
 
     [SerializeField] LayerMask layers_grab;
@@ -103,18 +104,24 @@ public class PinchGrabber : MonoBehaviour
         {
             PinchGrabTarget grabTarget = hits[i].GetComponent<PinchGrabTarget>();           
             if (!grabTarget) continue;
-                
-            grabbedObjects.Add(hits[i]);
-            grabbedBodies.Add(hits[i].attachedRigidbody);
-            hits[i].enabled = false;
-            hits[i].transform.SetParent(t_this);
 
-            Rigidbody body = hits[i].attachedRigidbody;
-            if(body)
+            //grabbedObjects.Add(hits[i]);
+            //grabbedBodies.Add(hits[i].attachedRigidbody);
+            //hits[i].enabled = false;
+            //hits[i].transform.SetParent(t_this);
+
+            //Rigidbody body = hits[i].attachedRigidbody;
+            //if(body)
+            //{
+            //    body.isKinematic = true;
+            //}
+
+            Element elem = grabTarget.GetComponentInParent<Element>();
+            if(elem)
             {
-                body.isKinematic = true;
+                grabbedElements.Add(elem);
+                elem.BeginGrab(t_this);
             }
-            
         }
 
         //action targets
@@ -143,35 +150,52 @@ public class PinchGrabber : MonoBehaviour
 
     void OnGrabEnd()
     {
-        for(int i=0;i<grabbedObjects.Count;i++)
-        {
-            //Rigidbody body = grabbedObjects[i].attachedRigidbody;
-            Rigidbody body = grabbedBodies[i];
-            if (body)
-            {
-                body.isKinematic = false;
-                body.useGravity = true;
-            }
+        //for(int i=0;i<grabbedObjects.Count;i++)
+        //{
+        //    //Rigidbody body = grabbedObjects[i].attachedRigidbody;
+        //    Rigidbody body = grabbedBodies[i];
+        //    if (body)
+        //    {
+        //        body.isKinematic = false;
+        //        body.useGravity = true;
 
-            grabbedObjects[i].enabled = true;
-            grabbedObjects[i].transform.SetParent(null);
+        //        grabbedBodies[i].transform.SetParent(null);
+        //    }
+        //    else
+        //    {
+        //        grabbedObjects[i].transform.SetParent(null);
+        //    }
+
+        //    grabbedObjects[i].enabled = true;
+        //}
+
+        //grabbedObjects.Clear();
+        //i_numGrabs = 0;
+
+        for(int i=0;i<grabbedElements.Count;i++)
+        {
+            grabbedElements[i].EndGrab();
         }
 
-        grabbedObjects.Clear();
-        i_numGrabs = 0;
+        grabbedElements.Clear();
     }
 
     public void AddGrabObject(Element element)
     {
-        element.transform.SetParent(t_this);
-        element.MyBody.isKinematic = true;
-        element.MyCollider.enabled = false;
+        //element.transform.SetParent(t_this);
+        //element.MyBody.isKinematic = true;
+        //element.MyCollider.enabled = false;
 
-        i_numGrabs++;
+        //i_numGrabs++;
 
-        if (grabbedObjects.Contains(element.MyCollider)) return;
+        //if (grabbedObjects.Contains(element.MyCollider)) return;
 
-        grabbedObjects.Add(element.MyCollider);
-        grabbedBodies.Add(element.MyBody);
+        //grabbedObjects.Add(element.MyCollider);
+        //grabbedBodies.Add(element.MyBody);
+
+        if (grabbedElements.Contains(element)) return;
+
+        grabbedElements.Add(element);
+        element.BeginGrab(t_this);
     }
 }

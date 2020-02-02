@@ -35,4 +35,9 @@ public class Altar : MonoBehaviour
         Element elem = other.GetComponentInParent<Element>();
         elements.Remove(elem);
     }
+
+    public void CombineElements()
+    {
+
+    }
 }

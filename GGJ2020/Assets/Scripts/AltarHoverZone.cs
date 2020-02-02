@@ -13,11 +13,6 @@ public class AltarHoverZone : MonoBehaviour
     float f_hoverPercent;
     bool b_isHovering = false;
 
-    [SerializeField] UnityEvent HoverStart;
-    [SerializeField] UnityEvent HoverStart2;
-    [SerializeField] UnityEvent HoverEnd;
-    [SerializeField] UnityEvent HoverEnd2;
-
     public bool IsReady
     {
         get { return f_hoverPercent > 0.9f; }
@@ -48,26 +43,20 @@ public class AltarHoverZone : MonoBehaviour
                 mat_hover.SetFloat("_Percent", f_hoverPercent);
             }
         }
+
+        //tm_debug.text = f_hoverPercent.ToString();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        HoverStart.Invoke();
-
         if (other.tag != "PalmHoverCheck") return;
-
-        HoverStart2.Invoke();
 
         b_isHovering = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        HoverEnd.Invoke();
-
         if (other.tag != "PalmHoverCheck") return;
-
-        HoverEnd2.Invoke();
 
         b_isHovering = false;
     }
