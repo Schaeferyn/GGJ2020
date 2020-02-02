@@ -410,9 +410,13 @@
     <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPVersion.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\OculusSpatializerUnity.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\helpers\ONSPReflectionZone.cs" />
+    <Compile Include="Assets\Scripts\Element.cs" />
+    <Compile Include="Assets\Scripts\ElementSpawner.cs" />
     <Compile Include="Assets\Scripts\FingerData.cs" />
+    <Compile Include="Assets\Scripts\Forge.cs" />
     <Compile Include="Assets\Scripts\GameStarter.cs" />
     <Compile Include="Assets\Scripts\HandTest.cs" />
+    <Compile Include="Assets\Scripts\PinchActionTarget.cs" />
     <Compile Include="Assets\Scripts\PinchGrabTarget.cs" />
     <Compile Include="Assets\Scripts\PinchGrabber.cs" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Official\MultiPassDistortion\DoublePassUnlitTemplate.shader" />
